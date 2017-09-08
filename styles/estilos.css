@@ -1,0 +1,1036 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+	* {
+		padding:0;
+		margin:0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+		 
+	body {
+		font-family: 'Roboto', Sans-serif;	
+	}
+
+	.menu_bar {
+		display:none;
+	}
+		 
+	.video{
+		width: 100%;
+		position: relative;
+		background-color: rgba(58,89,247,1)
+	}
+
+	.video video{
+	 	position: relative;
+		width: 100%;
+		top:0;
+		right: 0;
+		margin: auto;
+		opacity: 0.8;
+	}
+
+	.direccion{
+		text-decoration: none;
+		color: #0000FF;
+	}
+		 
+	section{
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.efecto1:hover div, .efecto1:hover div p, .efecto1:hover div a,
+	.efecto2:hover div, .efecto2:hover div p, .efecto2:hover div a,
+	.efecto3:hover div, .efecto3:hover img, .efecto3:hover div p, .efecto3:hover div a,
+	.efecto4:hover div, .efecto4:hover div h4,.efecto4:hover div a,.efecto4:hover div p,
+	.efecto5:hover div, .efecto5:hover div p, .efecto5:hover div a{
+		opacity: 1;
+	}
+
+	.efecto1:hover div h4, .efecto1:hover div p,
+	.efecto2:hover div h4, .efecto2:hover div h4, .efecto2:hover div a, .efecto2:hover div p,
+	.efecto3:hover div h4, .efecto3:hover div p, .efecto3:hover div a,
+	.efecto4:hover div, .efecto4:hover div h4, .efecto4:hover div p, .efecto4:hover div a,
+	.efecto5:hover div h4, .efecto5:hover div p, .efecto5:hover div a,.efecto5:hover div a{
+		transform: translateY(0);
+	}
+
+	.efecto3:hover img{
+		transform: scale(-1);
+	}
+
+	.efecto3 img{
+		transition: .3s linear;
+	}
+
+	.efecto4 img{
+		transition: .4s linear;
+		transition-delay: .4 linear
+	}
+
+	.efecto4:hover img{
+		transform: translateX(0px) translateY(0px) rotate(300deg) scale(0.2);
+		opacity: 0;
+	}
+
+	.efecto5 img{
+		transition: .6s linear;
+	}
+
+	.efecto5:hover img{
+		transform: scale(4);
+	}
+
+	.efecto1 div, .efecto2 div, .efecto3 div, .efecto4 div, .efecto5 div{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.5);
+		text-align: center;
+		opacity: 0;
+	}
+
+	.efecto1 div h4, .efecto2 div h4, .efecto3 div h4, .efecto4 div h4,.efecto5 div h4{
+		text-align: center;
+		color: white;
+		background-color: #000;
+		padding: 20px 0;
+		font-size: 20px;
+		margin-top: 20px;
+		transform: translateY(-20px);
+		transition: all 0.5s linear;
+	}
+
+	.efecto1 div p, .efecto2 div p, .efecto3 div p, .efecto4 div p,.efecto5 div p{
+		color: white;
+		text-align: justify;
+		padding: 0 20px;
+		margin-top: 20px;
+		font-size: 13px;
+		opacity: 0;
+		transition: all 1s linear;
+	}
+
+	.efecto1 div a, .efecto2 div a, .efecto3 div a, .efecto4 div a, .efecto5 div a{
+		text-decoration: none;
+		color: white;
+		background-color: rgba(0,0,0,1);
+		padding: 15px 20px;
+		display: inline-block;
+		margin-top: 20px;
+		opacity: 0;
+		font-size: 15px;
+		transition: all 1s linear;
+	}
+
+	.efecto2 div {
+		transition: .4s linear;
+	}
+
+	.efecto2 div h4{
+		transform: translateY(-10px);
+		transition: .5s linear;
+	}
+
+	.efecto2 div p{
+		transform: translateX(-20px);
+		transition: .5s linear;
+	}
+
+	.efecto2 div a{	
+		transition: .6s linear;
+		transform: translateY(80px);
+	}
+		 
+	.efecto3 div {
+		transition: 1s linear;
+	}
+
+	.efecto3 div h4{
+		transform: translateY(-60px);
+		transition:1s linear;
+	}
+
+	.efecto3 div p{
+		transform: translateX(350px) translateY(-190px) rotate(50deg);
+		transition: .8s linear;
+	}
+
+	.efecto3 div a{
+		transition: .4s linear;
+		transform: translateY(-50px);
+	}
+
+	.efecto4 div {
+		transition: .3s linear;
+		transform: translateX(400px) translateY(0px) rotate(0deg);
+	}
+
+	.efecto4 div h4{
+		transition: .3s linear;
+	}
+
+	.efecto4 div p{
+		transition: .3s linear;
+	}
+
+	.efecto4 div a{
+		transition: .3s linear;
+	}
+
+	.efecto5 div {
+		transition: 1s linear;
+	}
+
+	.efecto5 div h4{
+		padding: 10px 0;
+		border-bottom: 1px solid #fff;
+		transform: translateY(-50px);
+		transition:1s linear;
+		transform: scale(0.5);
+	}
+
+	.efecto5 div p{
+		transition: .8s linear;
+		transform: scale(0.5);
+	}
+
+	.efecto5 div a{
+		transition: .4s linear;
+		transform: translateY(50px);
+		transform: scale(0.5);
+	}
+
+/*celular*/
+@media only screen and (max-width: 768px) {
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		top: 66px;
+		width: 60%;
+		height: 100%;
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+		background:#023859;
+		z-index:1000;
+	}
+ 
+	header nav ul li a {
+		padding: 35px;
+	}
+	
+
+	section{
+		width: 90%;  
+		right: 0;
+		margin: 2% auto;	
+	}
+
+	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
+		position: relative;
+		width: 98%;
+		margin: 1% ;
+		display: inline-block;
+		background: #000;
+		overflow: hidden;
+	}
+
+
+	img.imagen{
+		max-width: 7%;
+		position: absolute;
+		top: 17%;
+		left: 2%;
+	}
+
+	.icon-twitter, .icon-facebook, .icon-instagram{
+		background: #fff;
+		padding: 3px;
+		position: absolute;
+	}
+
+	.icon-twitter, .icon-facebook, .icon-instagram{
+		top: 7%;
+		left: 3%;
+	}
+
+	.icon-facebook{
+		top: 39%;
+	}
+
+	.icon-instagram{
+		top: 71%;
+	}
+
+	.twitter, .facebook, .instagram{
+		left: 15%;
+		top: 12%;
+		color: #fff;
+		position: absolute;
+	}
+	
+	.facebook{
+		top: 45%;
+	}
+
+	.instagram{
+		top: 72%;
+	}
+
+	.p1, .p2{
+		right: 17%;
+		font-size: 15px;
+		bottom: 36%;
+		position: absolute;
+		color: #fff;
+	}
+	
+	.nina, .titupeli{	
+		margin-top: 66px;
+		width: 100%;
+		height: 100px;
+		position: relative;
+		background-color:#023859;
+	}
+
+	.logo{
+		right: 5%;
+		position: absolute;
+		top: 13%;
+		max-width: 10%;
+		opacity: 1;
+	}
+
+	.p{
+		color: #fff;
+		font-size: 15px;
+		bottom: 30%;
+		left: 10%;
+		position: absolute;
+	}
+		
+	.mascara{
+		transition: .4s linear;
+		width: 100%;	
+	}
+
+	.imagen1{
+		width: 98%;
+		margin-top: 1%;
+		margin-left:1%;
+		display: inline-block;
+	}
+
+	.img{
+		width: 100%;
+	}
+
+	.nn{
+		margin-bottom: 10px;
+	}
+
+	.section{
+		width: 100%;
+		margin: 0;
+		top: 0;
+	}
+
+	.menu_bar .bt-menu {
+		padding: 13px;
+		font-size: 25px;
+	}
+
+}
+
+/*tablet*/
+  @media only screen and (min-width: 768px) and (max-width: 990px){
+  	
+  	header nav ul li a {
+		padding:35px;
+		font-size: 20px;
+	}
+
+	.menu_bar .bt-menu {
+		padding: 20px;
+		font-size: 10px;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	section{
+		width: 95%;  
+		margin: 3% ;	
+		right: 0;
+	}
+
+	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
+		position: relative;
+		width: 45%;
+		margin: 2% ;
+		display: inline-block;
+		background: #000;
+		overflow: hidden;
+	}
+
+	img.imagen{
+		max-width: 6%;
+		position: absolute;
+		top: 7%;
+		left: 2%;
+	}
+	
+	.icon-twitter, .icon-facebook, .icon-instagram{
+		background: #fff;
+		padding: 5px;
+		position: absolute;
+	}
+
+	.twitter, .facebook, .instagram{
+		left: 9%;
+		top: 12%;
+		color: #fff;
+		position: absolute;
+	}
+	
+	.facebook{
+		top: 45%;
+	}
+
+	.instagram{
+		top: 72%;
+	}
+	
+	.icon-twitter{
+		top: 7%;
+		left: 3%;
+	}
+
+	.icon-facebook{
+		top: 39%;
+		left: 3%;
+	}
+
+	.icon-instagram{
+		top: 71%;
+		left: 3%;
+	}
+
+	.p1, .p2{
+		right: 19%;
+		font-size: 25px;
+		bottom: 40%;
+		position: absolute;
+		color: #fff;
+	}
+
+	.logo{
+		right: 7%;
+		position: absolute;
+		top: 6%;
+		max-width: 8%;
+		opacity: 1;
+	}
+
+	.p{
+		color: #fff;
+		font-size: 20px;
+		bottom: 30%;
+		left: 12%;
+		position: absolute;
+	}
+
+	.mascara{
+		transition: .4s linear;
+		width: 100%;
+	}
+
+	.nina, .titupeli{	
+		margin-top: 80px;
+		width: 100%;
+		height: 120px;
+		position: relative;
+		background-color:#023859;
+	
+	}
+
+	.imagen1{
+		width: 98%;
+		margin-top: 1%;
+		margin-left: 1%;
+		display: inline-block;
+	}
+
+	.img{
+		width: 100%;
+	}
+
+	.nn{
+		margin-bottom: 10px;
+	}
+
+	.section{
+		width: 100%;
+		margin: 0;
+		top: 0;
+	}
+
+	header nav{
+			top:80px;
+			width: 40%;
+			height: 100%;
+	}
+
+}
+
+ @media only screen and  (max-width: 990px){
+
+  	header nav {
+		text-align: left !important;
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+		background:#023859;
+		z-index: 2;
+	}
+
+	header nav ul li a {
+		display: block;
+		text-decoration:none;
+		color:#fff;
+	}
+
+	header nav ul .submenu1{
+		display: block;
+		border-bottom: none;
+	} 
+
+	.efecto1 div, .efecto2 div, .efecto3 div, .efecto4 div, .efecto5 div {
+		opacity: 1 !important;
+		transform: none !important;
+	}
+
+	.efecto1 div p, .efecto2 div p , .efecto3 div p, .efecto4 div p, .efecto5 div p {
+		opacity: 0 !important;
+	}
+
+	.efecto1 div h4, .efecto2 div h4, .efecto3 div h4, .efecto4 div h4, .efecto5 div h4 {
+		opacity: 0 !important;
+	}
+
+	.efecto1 div a, .efecto2 div a, .efecto3 div a, .efecto4 div a, .efecto5 div a {
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		padding: 20px;
+		font-size: 25px;
+		opacity: 1 ;
+		transform: translateY(0px);
+	}
+
+	.efecto1 img,.efecto2 img,.efecto3 img,.efecto4 img,.efecto5 img{
+		transform: none !important;
+		opacity: 1 !important;
+	}
+
+	.ff{
+		display: none;
+	}
+
+	.aa{
+		display: none;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#023859;
+		overflow: hidden;
+		z-index: 2;
+	}
+	 
+	.menu_bar .bt-menu {
+		display: block;
+		color: #fff;
+		overflow: hidden;		
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	 header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+		
+	 
+	header nav ul li:hover {
+		background:#E6344A;
+	}
+
+	header nav ul .submenu1:hover{
+		background: none;
+	} 
+	 
+	header nav::-webkit-scrollbar {
+	    width: 4px;
+	}
+
+	header nav::-webkit-scrollbar-track {
+	    background-color: #023859;
+	} 
+	 
+	header nav::-webkit-scrollbar-thumb {
+	    background-color: #E6344A; 
+	    border-radius: 10px;
+	} 
+
+	header nav::-webkit-scrollbar-button {
+	    background-color: none;
+	}
+	 
+	header nav::-webkit-scrollbar-corner {
+	    background-color: #E6344A;
+	} 
+
+	.h4{
+		text-align: center;
+		height: 94px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin:auto;
+		font-size: 40px;
+		color: #fff;
+	}
+
+	footer {
+		width: 100%;
+		height: 100px;
+		opacity: 0.8;
+		position: relative;
+		bottom: 0;
+		margin: 0;
+		left: 0;
+		background: #000;
+	}
+
+	.p2{
+		text-align: center;
+		height: 49px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		font-size: 20px;
+		margin: auto;
+	}
+
+	.titupeli{
+		margin-top: 0;
+		height: 100px;
+	}
+
+	.contenido{
+		font-size: 20px;
+		width: 90%;
+		padding: 5px 0;
+		margin-top: 2%;
+		margin-left: 3%;
+		vertical-align: top;
+		display: inline-block;
+	}
+}
+   /*pc*/
+@media only screen and  (min-width: 991px) and (max-width: 1200px) {
+
+	.nina, .titupeli{	
+		margin-top:65px;
+		width: 100%;
+		height: 160px;
+		position: relative;
+		background-color: rgba(58,89,247,0.8);
+	}
+	
+	.imagen1{
+		width: 35%;
+		margin-top: 1%;
+		margin-left: 4%;
+		display: inline-block;
+	}
+
+	.img{
+		width: 100%;
+	}
+
+	.contenido{
+		font-size: 20px;
+		width: 55%;
+		padding: 5px 0;
+		margin-top: 2%;
+		margin-left: 1%;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	header nav ul li a, .separacion nav ul li a  {
+		color:#fff;
+		display:block;
+		text-decoration:none;
+		padding: 23px;
+		font-size: 16px;
+	}
+
+	.section{
+		width: 100%;
+		margin: 0;
+		top: 0;
+	}
+
+	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
+		position: relative;
+		width: 20%;
+		height: 350px;
+		margin: 2% 0 0 4%;
+		display: inline-block;
+		background: rgba(0,0,0,0.5);
+		overflow: hidden;
+	}
+	
+	.mascara{
+		transition: .4s linear;
+		width: 100%;
+		height: 350px;
+	}		
+
+	.logo{
+		right: 7%;
+		position: absolute;
+		top: 13%;
+		max-width: 4%;
+		opacity: 0;
+		transition: all 2s linear;		
+	}
+
+	.logo1{
+		padding: 23.5px;
+	}
+
+	.efecto1 div h4,.efecto2 div h4,.efecto3 div h4,.efecto4 div h4,.efecto5 div h4{
+		font-size: 15px;
+		padding: 13px;
+	}
+
+	.ff{
+		width:35px;
+		height:35px;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.nina, .titupeli{	
+		margin-top:90px;
+		width: 100%;
+		height: 200px;
+		position: relative;
+		background-color: #023859;
+	}
+
+	.imagen1{
+		width: 41%;
+		margin-top: 1%;
+		margin-left: 4%;
+		display: inline-block;
+	}
+
+	.img{
+		width: 80%;
+	}
+
+	.contenido{
+		font-size: 20px;
+		width: 45%;
+		padding: 80px 0;
+		margin-top: 1%;
+		margin-left: 1%;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	header nav ul li a, .separacion nav ul li a  {
+		color:#fff;
+		display:block;
+		text-decoration:none;
+		padding: 36px;
+		font-size: 16px;
+	}
+
+	.section{
+		width: 100%;
+		margin: 0;
+		top: 0;
+	}
+
+	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
+		position: relative;
+		width: 20%;
+		height: 350px;
+		margin: 2% 0 0 4%;
+		display: inline-block;
+		background: rgba(0,0,0,0.5);
+		overflow: hidden;
+		border-radius: 1%;
+	}
+
+	.mascara{
+		transition: .4s linear;
+		width: 100%;
+		height: 350px;
+	}
+
+	.logo{
+		right: 7%;
+		position: absolute;
+		top: 13%;
+		max-width: 4%;
+		opacity: 0;
+		transition: all 2s linear;
+	}
+
+	.ff{
+		width: 45px;
+		height:45px;
+	}
+
+	.logo1{
+		padding: 36	px;
+	}
+
+	.efecto1 div h4,.efecto2 div h4,.efecto3 div h4,.efecto4 div h4,.efecto5 div h4{
+		font-size: 18px;
+		padding: 13px;
+	}
+} 
+
+@media only screen and (min-width: 991px){
+
+	header {
+		width: 100%;
+		position: fixed;
+		top:0;
+		z-index: 1;
+	}
+		 
+	header nav {
+		text-align: center;
+		position: fixed;
+		background:#023859;
+		z-index:5000;
+		max-width: 100%;
+		width:100%;	
+	}
+
+	header nav ul {
+		list-style:none;
+	}
+		 
+	header nav ul li {
+		float: left;
+		display:inline-block;
+		position: relative;
+		width: 16%;
+	}
+
+	header nav ul li:hover {
+		background:#E6344A;
+	}
+
+	header nav ul li a  {
+		margin-right: -3px;
+	}
+		  
+	header nav ul li .caret {
+		position: relative;
+		top:3px;
+		margin-left:10px;
+		margin-right:0px;
+	}
+
+	header nav ul .submenu1{
+		display: none;
+	} 
+		
+	header nav ul .aa{
+		float: none !important;
+	}
+
+	header nav ul .aa:hover {
+		background: #023859;
+	}
+
+	footer:hover{
+		opacity: 0.4;
+	}
+
+	footer:hover img.logo{
+		opacity: 1;
+	}
+
+	footer:hover .icon-facebook, 
+	footer:hover .icon-twitter, 
+	footer:hover .icon-instagram,
+	footer:hover .facebook, 
+	footer:hover .twitter, 
+	footer:hover .instagram{
+		background-color: #000;
+		color: white;
+	}
+
+	footer {
+		width: 100%;
+		height: 80px;
+		opacity: 0.8;
+		position: relative;
+		bottom: 0;
+		background: #000;
+		-ms-transition: all 0.5s ease-in;
+		-moz-transition: all 0.5s ease-in;
+		-o-transition: all 0.5s ease-in;
+		-webkit-transition: all 0.5s ease-in;
+		transition: all 0.5s ease-in;
+	}
+
+	.icon-twitter, 
+	.icon-facebook,
+	.icon-instagram,
+	.twitter,
+	.facebook,
+	.instagram{
+		background: #fff;
+		padding: 15px;
+		margin-left: 3%;
+		top: 15%;
+		position: absolute;
+		-ms-transition: all 0.5s ease-in;
+		-moz-transition: all 0.5s ease-in;
+		-o-transition: all 0.5s ease-in;
+		-webkit-transition: all 0.5s ease-in;
+		transition: all 0.5s ease-in;
+	}
+
+	.twitter{
+		margin-left: 6%;
+	}
+
+	.icon-facebook{
+		margin-left: 18%;
+	}
+
+	.facebook{
+		margin-left: 21%;
+	}
+
+	.icon-instagram {
+		margin-left: 33%;
+	}
+
+	.instagram{
+		margin-left: 36%;
+	}
+
+	.ff{
+		top: 0px;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		position: absolute;
+	}
+
+	.h4{
+		text-align: center;
+		height: 94px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin:auto;
+		font-size: 80px;
+		color: #fff;
+	}
+
+	.titupeli{
+		margin-top: 0;
+		height: 100px;
+	}
+
+  	.menu_bar {
+		display:none;
+	}
+
+	.nn{
+		margin-bottom: 10px;
+	}
+
+	img.imagen{
+		max-width: 3%;
+		position: absolute;
+		top: 7%;
+		left: 2%;
+	}
+
+	.p1, .p2{
+		right: 18%;
+		position: absolute;
+		font-size: 40px;
+		bottom:20%; 	
+		color: #fff;
+		transition: all .7s linear;
+	}
+
+	.p2{
+		text-align: center;
+		height: 49px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		margin: auto;
+	}
+
+	.p{
+		color: #fff;
+		font-size: 20px;
+		bottom: 25%;
+		left: 6%;
+		position: absolute;
+	}
+
+	.twitter, 
+	.instagram,
+	.facebook{
+		font-size: 13.9px;
+	}
+}
+
+	
