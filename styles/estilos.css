@@ -19,6 +19,8 @@
 	.video{
 		width: 100%;
 		position: relative;
+		background-color: #023859;
+		opacity: 0.8;
 	}
 
 	.video video{
@@ -26,7 +28,7 @@
 		width: 100%;
 		top:0;
 		right: 0;
-		margin: auto;
+		margin: 1px;
 		opacity: 0.8;
 	}
 
@@ -789,7 +791,6 @@
 		top: 0;
 	}
 
-
 	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
 		position: relative;
 		width: 20%;
@@ -980,7 +981,7 @@
 	}
 
 	.titupeli{
-		margin-top: 0;
+		margin-top:-5px;
 		height: 100px;
 	}
 
