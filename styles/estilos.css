@@ -19,7 +19,6 @@
 	.video{
 		width: 100%;
 		position: relative;
-		background-color: rgba(58,89,247,1)
 	}
 
 	.video video{
@@ -789,7 +788,7 @@
 		margin: 0;
 		top: 0;
 	}
-	
+
 
 	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
 		position: relative;
