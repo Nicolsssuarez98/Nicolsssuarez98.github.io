@@ -35,6 +35,19 @@
 		text-decoration: none;
 		color: #0000FF;
 	}
+
+	.ir-arriba{
+		display: none;
+		padding: 5px;
+		border-radius: 50%;
+		background-color:#023859;
+		font-size: 20px;
+		cursor: pointer;
+		position: fixed;
+		bottom: 8px;
+		right: 8px;
+		z-index: 2;	
+	}
 		 
 	section{
 		position: relative;
@@ -218,12 +231,6 @@
 		top: 66px;
 		width: 60%;
 		height: 100%;
-		position: fixed;
-		right:100%;
-		margin: 0;
-		overflow: scroll;
-		background:#023859;
-		z-index:1000;
 	}
  
 	header nav ul li a {
@@ -296,7 +303,7 @@
 		color: #fff;
 	}
 	
-	.nina, .titupeli{	
+	.nina, .titupeli, .titupeli1{	
 		margin-top: 66px;
 		width: 100%;
 		height: 100px;
@@ -308,7 +315,7 @@
 		right: 5%;
 		position: absolute;
 		top: 13%;
-		max-width: 10%;
+		width: 10%;
 		opacity: 1;
 	}
 
@@ -441,7 +448,7 @@
 		right: 7%;
 		position: absolute;
 		top: 6%;
-		max-width: 8%;
+		width: 8%;
 		opacity: 1;
 	}
 
@@ -458,13 +465,12 @@
 		width: 100%;
 	}
 
-	.nina, .titupeli{	
+	.nina, .titupeli, .titupeli1{	
 		margin-top: 80px;
 		width: 100%;
 		height: 120px;
 		position: relative;
 		background-color:#023859;
-	
 	}
 
 	.imagen1{
@@ -644,9 +650,13 @@
 		margin: auto;
 	}
 
-	.titupeli{
+	.titupeli, .titupeli1{
 		margin-top: 0;
 		height: 100px;
+	}
+
+	.titupeli1{
+		margin-top: 5px;
 	}
 
 	.contenido{
@@ -667,12 +677,12 @@
    /*pc*/
 @media only screen and  (min-width: 991px) and (max-width: 1200px) {
 
-	.nina, .titupeli{	
+	.nina, .titupeli, .titupeli1{	
 		margin-top:65px;
 		width: 100%;
 		height: 160px;
 		position: relative;
-		background-color: rgba(58,89,247,0.8);
+		background-color: #023859;
 	}
 	
 	.imagen1{
@@ -724,6 +734,7 @@
 		transition: .4s linear;
 		width: 100%;
 		height: 350px;
+
 	}		
 
 	.logo{
@@ -752,7 +763,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-	.nina, .titupeli{	
+	.nina, .titupeli, .titupeli1{	
 		margin-top:90px;
 		width: 100%;
 		height: 200px;
@@ -797,11 +808,10 @@
 
 	.efecto1, .efecto2, .efecto3, .efecto4, .efecto5{
 		position: relative;
-		width: 20%;
-		height: 350px;
-		margin: 2% 0 0 4%;
+		width: 22%;
+		height: 400px;
+		margin: 2% 0 0 2%;
 		display: inline-block;
-		background: rgba(0,0,0,0.5);
 		overflow: hidden;
 		border-radius: 1%;
 	}
@@ -809,7 +819,7 @@
 	.mascara{
 		transition: .4s linear;
 		width: 100%;
-		height: 350px;
+		height: 400px;
 	}
 
 	.logo{
@@ -822,12 +832,11 @@
 	}
 
 	.ff{
-		width: 45px;
-		height:45px;
+		width: 30%;
 	}
 
 	.logo1{
-		padding: 36	px;
+		padding: 36px;
 	}
 
 	.efecto1 div h4,.efecto2 div h4,.efecto3 div h4,.efecto4 div h4,.efecto5 div h4{
@@ -986,6 +995,11 @@
 
 	.titupeli{
 		margin-top:-5px;
+		height: 100px;
+	}
+
+	.titupeli1{
+		margin-top: 5px;
 		height: 100px;
 	}
 
