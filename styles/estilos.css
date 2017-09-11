@@ -739,7 +739,7 @@
 		height: 350px;
 		margin: 2% 0 0 4%;
 		display: inline-block;
-		background: rgba(0,0,0,1);
+		background: rgba(0,0,0,0.5);
 		overflow: hidden;
 	}
 	
@@ -827,7 +827,7 @@
 		display: inline-block;
 		overflow: hidden;
 		border-radius: 1%;
-		background: rgba(0,0,0,1);
+		background: rgba(0,0,0,0.5);
 	}
 
 	.mascara{
