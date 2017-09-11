@@ -540,6 +540,7 @@
 	.efecto1 div, .efecto2 div, .efecto3 div, .efecto4 div, .efecto5 div {
 		opacity: 1 !important;
 		transform: none !important;
+
 	}
 
 	.efecto1 div p, .efecto2 div p , .efecto3 div p, .efecto4 div p, .efecto5 div p {
@@ -738,7 +739,7 @@
 		height: 350px;
 		margin: 2% 0 0 4%;
 		display: inline-block;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,1);
 		overflow: hidden;
 	}
 	
@@ -826,6 +827,7 @@
 		display: inline-block;
 		overflow: hidden;
 		border-radius: 1%;
+		background: rgba(0,0,0,1);
 	}
 
 	.mascara{
