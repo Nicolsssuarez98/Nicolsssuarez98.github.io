@@ -46,3 +46,15 @@ $(document).ready(function(){
 	});
  
 });
+
+$(document).ready(function(){
+ 
+	$('.ir-abajo').click(function(){
+		$('body, html').animate({
+			scrollTop: '600px'
+		}, 600);
+	});
+ 
+	  	
+ 
+});
